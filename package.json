@@ -1,7 +1,7 @@
 {
   "name": "ngx-color-picker",
   "description": "Color picker widget for Angular",
-  "bugs": "https://github.com/zefoy/ngx-color-picker/issues",
+  "bugs": "https://github.com/spherereduite/ngx-color-picker/issues",
   "license": "MIT",
   "version": "8.0.0",
   "main": "./bundles/ngx-color-picker.umd.js",
@@ -32,7 +32,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/zefoy/ngx-color-picker.git"
+    "url": "https://github.com/spherereduite/ngx-color-picker.git"
   },
   "dependencies": {},
   "devDependencies": {
