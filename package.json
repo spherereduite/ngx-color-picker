@@ -19,7 +19,7 @@
     "watch": "watch --wait=5 'npm run start' src/",
     "lint": "npm run lint:ts && npm run lint:css",
     "build": "npm run build:html && npm run build:css && npm run build:js",
-    "bundle": "npm run bundle:es5 ; npm run bundle:umd ; npm run minify:umd",
+    "bundle": "npm run bundle:es5 && npm run bundle:umd && npm run minify:umd",
     "prepare": "npm run clean && npm run build && npm run bundle",
     "lint:ts": "tslint \"src/**/*.ts\"",
     "lint:css": "stylelint \"src/**/*.css\"",
