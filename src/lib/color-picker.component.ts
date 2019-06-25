@@ -114,6 +114,8 @@ export class ColorPickerComponent implements OnInit, OnDestroy, AfterViewInit {
   public cpAddColorButtonClass: string;
   public cpRemoveColorButtonClass: string;
 
+  public cpAddColorDialogClass: string;
+
   @ViewChild('dialogPopup', { static: true }) dialogElement: ElementRef;
 
   @ViewChild('hueSlider', { static: true }) hueSlider: ElementRef;
@@ -206,7 +208,8 @@ export class ColorPickerComponent implements OnInit, OnDestroy, AfterViewInit {
     cpPresetEmptyMessage: string, cpPresetEmptyMessageClass: string, cpOKButton: boolean,
     cpOKButtonClass: string, cpOKButtonText: string, cpCancelButton: boolean,
     cpCancelButtonClass: string, cpCancelButtonText: string, cpAddColorButton: boolean,
-    cpAddColorButtonClass: string, cpAddColorButtonText: string, cpRemoveColorButtonClass: string): void
+    cpAddColorButtonClass: string, cpAddColorButtonText: string, cpRemoveColorButtonClass: string,
+    cpAddColorDialogClass: string): void
   {
     this.setInitialColor(color);
 
@@ -258,6 +261,8 @@ export class ColorPickerComponent implements OnInit, OnDestroy, AfterViewInit {
     this.cpAddColorButtonText = cpAddColorButtonText;
     this.cpAddColorButtonClass = cpAddColorButtonClass;
     this.cpRemoveColorButtonClass = cpRemoveColorButtonClass;
+
+    this.cpAddColorDialogClass = cpAddColorDialogClass;
 
     if (!cpPositionRelativeToArrow) {
       this.dialogArrowOffset = 0;

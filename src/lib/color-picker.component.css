@@ -14,7 +14,7 @@
   -ms-user-select: none;
 
   user-select: none;
-  background-color: #383838;
+  background-color: #000;
 }
 
 .color-picker * {
@@ -34,8 +34,19 @@
 
   font-size: 13px;
   text-align: center;
-  color: #000;
+
+  /*
+  color: #b7b7b7;
+  background-color: #464646;
+  */
 }
+
+/*
+.color-picker input:focus {
+  color: #1c1c1c;
+  background: #c4c4c4;
+}
+*/
 
 .color-picker input:invalid,
 .color-picker input:-moz-ui-invalid,

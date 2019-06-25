@@ -339,7 +339,9 @@
 
   <div class="row" style="height: 320px">
     <div class="col-md-3">
-      <span [style.background]="arrayColors[selectedColor]" [cpToggle]="true" [cpDialogDisplay]="'inline'" [cpCancelButton]="true" [cpCancelButtonClass]= "'btn btn-primary btn-xs'" [(colorPicker)]="arrayColors[selectedColor]"></span>
+      <span [style.background]="arrayColors[selectedColor]" [cpToggle]="true" [cpDialogDisplay]="'inline'" [cpCancelButton]="true" [cpCancelButtonClass]= "'btn btn-primary btn-xs'"
+            [(colorPicker)]="arrayColors[selectedColor]" [cpAddColorDialogClass]="'cp-colors'">
+      </span>
     </div>
 
     <div class="col-md-2">
@@ -355,12 +357,16 @@
     </div>
 
     <div class="col-md-7">
+
+        <p class="cp-colors">TESTTESTTESTTESTTESTTESTTESTTEST</p>
+
       <p>Show the dialog permanently: </p>
       <pre>
 &lt;span [style.background]="arrayColors[selectedColor]"
       [cpToggle]="true"
       [cpDialogDisplay]="'inline'"
       [cpCancelButton]="true"
+      [cpAddColorDialogClass]="'cp-colors'"
       [(colorPicker)]="arrayColors[selectedColor]"&gt;&lt;/span&gt;
 
 &lt;div [style.background]="arrayColors['color1']"

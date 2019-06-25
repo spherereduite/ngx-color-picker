@@ -70,6 +70,8 @@ export class ColorPickerDirective implements OnChanges, OnDestroy {
   @Input() cpAddColorButtonText: string = 'Add color';
   @Input() cpAddColorButtonClass: string = 'cp-add-color-button-class';
 
+  @Input() cpAddColorDialogClass: string = 'cp-add-color-dialog-class';
+
   @Input() cpRemoveColorButtonClass: string = 'cp-remove-color-button-class';
 
   @Output() cpInputChange = new EventEmitter<any>(true);
@@ -179,7 +181,7 @@ export class ColorPickerDirective implements OnChanges, OnDestroy {
         this.cpOKButton, this.cpOKButtonClass, this.cpOKButtonText,
         this.cpCancelButton, this.cpCancelButtonClass, this.cpCancelButtonText,
         this.cpAddColorButton, this.cpAddColorButtonClass, this.cpAddColorButtonText,
-        this.cpRemoveColorButtonClass);
+        this.cpRemoveColorButtonClass, this.cpAddColorDialogClass);
 
       this.dialog = this.cmpRef.instance;
 

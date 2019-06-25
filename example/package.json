@@ -20,7 +20,7 @@
   },
   "config": {
     "deployToGit": {
-      "repository": "git@github.com:zefoy/ngx-color-picker.git",
+      "repository": "git@github.com:spherereduite/ngx-color-picker.git",
       "branch": "gh-pages",
       "folder": "dist",
       "script": "npm run build -- --base-href=ngx-color-picker --delete-output-path=false",
@@ -41,7 +41,7 @@
     "@angular/platform-browser": "^8.0.0",
     "@angular/platform-browser-dynamic": "^8.0.0",
     "core-js": "^3.1.0",
-    "ngx-color-picker": "^8.0.0",
+    "ngx-color-picker": "../",
     "rxjs": "^6.5.0",
     "zone.js": "^0.9.0"
   },

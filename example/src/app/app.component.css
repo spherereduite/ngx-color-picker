@@ -28,3 +28,17 @@ input {
   font-size: 30px;
   font-weight: bolder;
 }
+
+::ng-deep .cp-colors {
+  background-color: #2e2e2e !important;
+}
+
+::ng-deep .cp-colors input {
+  color: #b7b7b7;
+  background-color: #464646;
+}
+
+::ng-deep .cp-colors input:focus {
+  color: #1c1c1c;
+  background: #c4c4c4;
+}
